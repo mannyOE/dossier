@@ -282,7 +282,7 @@ color: #8C8C8C;
 }
 .features .img-1 {
 	/*position: absolute;*/
-	width: 100%;
+	width: 95%;
 	height: 361px;
 	/*left: -14px;
 	top: 3024px;*/
@@ -292,7 +292,7 @@ color: #8C8C8C;
 }
 .features .img-2 {
 	/*position: absolute;*/
-	width: 100%;
+	width: 95%;
 	height: 361px;
 	/*left: -14px;
 	top: 3024px;*/
@@ -330,7 +330,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 50px;
 line-height: 46px;
-margin-left: 230px;
+margin-left: 15%;
 margin-top: 50px;
 margin-bottom: 70px;
 color: #1D2047;
