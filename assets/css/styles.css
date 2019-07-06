@@ -702,5 +702,209 @@ color: #DADADA;
 }
 
 
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-content {
+	min-height: 700px;
+}
+.modal-body {
+	padding: 0;
+}
+.modal-content .sidebar-1 {
+	min-height: 780px;
+	background: linear-gradient(180deg, #0BB1E3 -33.33%, #0B7CA3 100%);
+	border-top-left-radius: 12px;
+	border-bottom-left-radius: 12px;
+}
+
+.modal-content .sidebar-1 button {
+	padding: 0;
+	width: 100%;
+	height: 175px;
+	background: transparent;
+	box-shadow: -9px 19px 40px rgba(0, 0, 0, 0.02);
+	border-radius: 5px;
+	border: none;
+	text-align: left;
+}
+
+.modal-content .sidebar-1 button .text{
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 32px;
+	position: relative;
+	
+	left: 30px;
+	color: #1C414F;
+}
+
+.modal-content .sidebar-1 button .head {
+	position: relative;
+	/*top: -20px;*/
+	left: 30px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 19px;
+	/* identical to box height, or 136% */
+	letter-spacing: 3px;
+
+	color: rgba(67, 67, 67, 0.61);
+}
+
+button.business {
+	margin-top: 100px;
+}
+
+.modal-content .row, .modal-content .col-lg-3, .modal-content .col-lg-9, .modal-content .col-xs-12{
+	padding: 0 !important;
+}
+
+/*.modal-content .col-lg-9, .modal-content .col-xs-12{
+	padding: 0 !important;
+}*/
+
+.active-tab {
+	background: #FFFFFF !important;
+}
+.form {
+	position: relative;
+	min-height: 700px;
+}
+
+.form .body {
+	padding: 49px 65px;
+	/*padding-left: 65px; */
+}
+
+.form .body label {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	/* identical to box height */
+
+	color: rgba(138, 138, 138, 0.46);
+}
+
+.form .footer {
+	height: 100px;
+	width: 98%;
+	position: absolute;
+	bottom: 0px;
+	z-index: 10;
+	border: none;
+	border-top: 2px solid rgba(0, 0, 0, 0.09);
+}
+
+.form .header {
+	min-height: 110px;
+	width: 98%;
+	position: absolute;
+	top: 0px;
+	z-index: 10;
+	border: none;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.09);
+}
+.nav-tabs {
+	border: none !important;
+}
+
+.form .header .busin, .form .header .indivi {
+	padding-left: 45px;
+	/*padding-top: 25px;*/
+}
+
+.form .header .mobile-shard {
+	padding-left: 25%;
+	margin-bottom: 25px;
+	/*padding-right: 25%;*/
+}
+
+.form .body {
+	margin-top: 150px;
+}
+
+.form .body .form-text-input {
+	width: 90%;
+	height: 50px;
+	border: none;
+	border-bottom: 2px solid rgba(169, 169, 169, 0.22);
+	outline: none;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 20px;
+	/* identical to box height */
+
+	color: #4B4B4B;
+}
+
+.form button {
+	width: 40%;
+	height: 54px;
+	color: #fff;
+	font-size: 15px;
+	background: linear-gradient(90deg, #0EB3E4 2.49%, #0E9CD2 100%);
+	box-shadow: 0px 20px 40px rgba(13, 57, 120, 0.21);
+	border-radius: 2px;
+	border: none;
+	margin-top: 40px;
+}
+
+.register {
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 47px;
+
+	color: #656565;
+}
+
+.friar {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 19px;
+	/* identical to box height, or 106% */
+
+	color: #A8A8A8;
+}
+
+.nav-tabs li a{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 19px;
+	/* identical to box height, or 136% */
+	letter-spacing: 3px;
+
+	color: rgba(67, 67, 67, 0.61);
+}
 
 

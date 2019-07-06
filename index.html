@@ -6,6 +6,10 @@
 	<link rel="stylesheet" type="text/css" href="./assets/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./assets/fonts/themify-icons/themify-icons.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+
+	<script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./assets/js/script.js"></script>
 </head>
 <body>
 	
@@ -16,7 +20,7 @@
 			<a href="">
 				<img src="./assets/img/logo.png" class="logo">
 			</a>
-			<button href="./pages/signup.html" class="signup-btn">SignUp</button>
+			<button href="./pages/signup.html" class="signup-btn" data-toggle="modal" data-target="#signup-modal">SignUp</button>
 			<button href="./pages/login.html" class="login-btn">Login</button>
 		</div>	
 
@@ -479,7 +483,218 @@
 			</div>
 		</div> 
 	</section>
-	<script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+
+
+	<!-- Modal -->
+<div id="signup-modal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+        	<div class="col-lg-3 hidden-xs sidebar-1">
+        		<button class="business" onclick="selectBusiness()">
+        			<div class="head text-white">FOR BUSINESS</div>
+        			<div class="text text-white">
+        				Employment <br>Screening
+        			</div>
+        		</button>
+        		<button class="individual" onclick="selectIndividual()">
+        			<div class="head text-white">FOR INDIVIDUALS</div>
+        			<div class="text text-white">
+        				Personal Resume <br>Verification
+        			</div>
+        		</button>
+        	</div>
+
+        	<div class="col-lg-9 col-xs-12 form">
+        		<div class="header">
+        			<div class="hidden-xs" style="height: 25px;"></div>
+        			<div class="mobile-shard visible-xs">
+        				<ul class="nav nav-tabs">
+        					<li>
+        						<a href="">For Business</a>
+        					</li>
+        					<li>
+        						<a href="">
+        							For Individuals
+        						</a>
+        					</li>
+        				</ul>
+        			</div>
+        			<div class="busin hidden mb-3">
+        				<div class="register ">
+        					Registeration
+        				</div>
+        				<div class="friar">
+        					Create a new company profile to get started
+        				</div>
+        			</div>
+        			<div class="indivi visible mb-3">
+        				<div class="register">
+        					Sign Up
+        				</div>
+        				<div class="friar">
+        					Create a new profile to get started
+        				</div>
+        			</div>
+        		</div>
+        		<div class="body">
+        			<div class="indivi row visible">
+        				<!-- form for individual registration -->
+        				<div class="col-xs-12 col-lg-6 col-md-6 pr-2">
+        					<div class="form-group">
+        						<label>First Name</label><br>
+        						<input type="text" class="form-text-input" placeholder="James" name="">
+        					</div>
+        				</div>
+
+        				<div class="col-xs-12 col-lg-6 col-md-6 pr-2">
+        					<div class="form-group">
+        						<label>Last Name</label><br>
+        						<input type="text" class="form-text-input" placeholder="Cauldron" name="">
+        					</div>
+        				</div>
+
+        				<div class="col-xs-12 col-lg-6 col-md-6 pr-2">
+        					<div class="form-group">
+        						<label>Email Address</label><br>
+        						<input type="text" class="form-text-input" placeholder="Cauldron@mail.com" name="">
+        					</div>
+        				</div>
+
+        				<div class="col-xs-12 col-lg-6 col-md-6 pr-2">
+        					<div class="form-group">
+        						<label>Phone Number</label><br>
+        						<input type="text" class="form-text-input" placeholder="(443) -9383-9393" name="">
+        					</div>
+        				</div>
+
+        				<div class="col-xs-12">
+        					<div class="col-xs-12 col-lg-4 col-md-4 pr-2">
+	        					<div class="form-group">
+	        						<label>Date of Birth</label><br>
+	        						<select class="form-text-input">
+	        							<option>Day</option>
+	        						</select>
+	        					</div>
+	        				</div>
+
+	        				<div class="col-xs-12 col-lg-4 col-md-4 pr-2">
+	        					<div class="form-group">
+	        						<label></label><br>
+	        						<select class="form-text-input">
+	        							<option>Month</option>
+	        						</select>
+	        					</div>
+	        				</div>
+
+	        				<div class="col-xs-12 col-lg-4 col-md-4 pr-2">
+	        					<div class="form-group">
+	        						<label></label><br>
+	        						<select class="form-text-input">
+	        							<option>Year</option>
+	        						</select>
+	        					</div>
+	        				</div>
+        				</div>
+
+        				<div class="col-xs-12 col-lg-6 col-md-6 pr-2">
+        					<div class="form-group">
+        						<label>Password</label><br>
+        						<input type="password" class="form-text-input" placeholder="***********" name="">
+        					</div>
+        				</div>
+
+        				<div class="col-xs-12 col-lg-6 col-md-6 pr-2">
+        					<div class="form-group">
+        						<label>Confirm Password</label><br>
+        						<input type="password" class="form-text-input" placeholder="***********" name="">
+        					</div>
+        				</div>
+
+        				<button class="px-5 mb-5">
+							<span class="pull-left ml-3">
+								SUBMIT
+							</span>
+							<img src="./assets/img/arrow.png" class="pull-right mt-2">
+						</button>
+						<div style="height: 50px;"></div>
+
+        			</div>
+
+        			<div class="busin hidden">
+        				<!-- form for individual registration -->
+        				<div class="col-xs-12 pr-2">
+        					<div class="form-group">
+        						<label>Business Name</label><br>
+        						<input type="text" class="form-text-input" placeholder="Primrose" name="">
+        					</div>
+        				</div>
+
+        				<div class="col-xs-12 col-lg-6 col-md-6 pr-2">
+        					<div class="form-group">
+        						<label>Contact Email Address</label><br>
+        						<input type="text" class="form-text-input" placeholder="Cauldron@mail.com" name="">
+        					</div>
+        				</div>
+
+        				<div class="col-xs-12 col-lg-6 col-md-6 pr-2">
+        					<div class="form-group">
+        						<label>Login Email Address</label><br>
+        						<input type="text" class="form-text-input" placeholder="Cauldron@mail.com" name="">
+        					</div>
+        				</div>
+
+        				<div class="col-xs-12 col-lg-12 col-md-12 pr-2">
+        					<div class="form-group">
+        						<label>Address</label><br>
+        						<input type="text" class="form-text-input" placeholder="" name="">
+        					</div>
+        				</div>
+
+        				<div class="col-xs-12 col-lg-6 col-md-6 pr-2">
+        					<div class="form-group">
+        						<label>Password</label><br>
+        						<input type="password" class="form-text-input" placeholder="***********" name="">
+        					</div>
+        				</div>
+
+        				<div class="col-xs-12 col-lg-6 col-md-6 pr-2">
+        					<div class="form-group">
+        						<label>Confirm Password</label><br>
+        						<input type="password" class="form-text-input" placeholder="***********" name="">
+        					</div>
+        				</div>
+
+        				<button class="px-5 mb-5">
+							<span class="pull-left ml-3">
+								SUBMIT
+							</span>
+							<img src="./assets/img/arrow.png" class="pull-right mt-2">
+						</button>
+						<div style="height: 50px;"></div>
+        			</div>
+        		</div>	
+        		
+        		<div class="footer">
+        			<div class="col-xs-4 mt-4">
+        				<img src="./assets/img/mcafee.png">
+        			</div>
+        			<div class="col-xs-4 mt-4">
+        				<img src="./assets/img/bbb.png">
+        			</div>
+        			<div class="col-xs-4 mt-4 hidden-xs">
+        				<img src="./assets/img/psf.png">
+        			</div>
+        		</div>
+        	</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
 </body>
 </html>
