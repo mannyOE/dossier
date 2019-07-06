@@ -7,6 +7,7 @@
 body {
 	padding: 0;
 	margin: 0;
+	overflow-x: hidden;
 }
 button {
 	outline: none;
@@ -268,21 +269,39 @@ color: #8C8C8C;
 	position: relative;
 	width: 60%;
 	margin-left: 300px;
+	z-index: 3;
 }
 .doss .kidds-3 {
 	position: absolute;
 	right: 100px;
 	margin-top: 120px;
 	width: 30%;
+	z-index: 4;
+}
+
+.doss .dotts {
+	position: absolute;
+	z-index: 2;
+	margin-top: 10px;
+	right: 40px; 
+}
+
+.doss .dotas {
+	position: absolute;
+	z-index: 2;
+	margin-top: 230px;
+	left: 40px; 
 }
 
 .features {
 	min-height: 500px;
-	padding-bottom: 50px;
+}
+.droop {
+	height: 500px;
 }
 .features .img-1 {
 	/*position: absolute;*/
-	width: 95%;
+	width: 90%;
 	height: 361px;
 	/*left: -14px;
 	top: 3024px;*/
@@ -292,7 +311,7 @@ color: #8C8C8C;
 }
 .features .img-2 {
 	/*position: absolute;*/
-	width: 95%;
+	width: 90%;
 	height: 361px;
 	/*left: -14px;
 	top: 3024px;*/
@@ -301,7 +320,7 @@ color: #8C8C8C;
 }
 .features .img-3 {
 	/*position: absolute;*/
-	width: 100%;
+	width: 90%;
 	height: 361px;
 	/*left: -14px;
 	top: 3024px;*/
@@ -310,7 +329,7 @@ color: #8C8C8C;
 }
 .features .img-4 {
 	/*position: absolute;*/
-	width: 100%;
+	width: 90%;
 	height: 361px;
 	/*left: -14px;
 	top: 3024px;*/
@@ -323,7 +342,22 @@ color: #8C8C8C;
 	width: 100%;
 	height: 100%;
 }
+.icon {
+	margin-top: 50%;
+	margin-left: 40%;
+	margin-bottom: 30px;	
+}
+.img-content {
+	font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 125.5%;
+/* or 28px */
+text-align: center;
 
+color: #FFFFFF;
+}
 .features .herf {
 	font-family: Roboto Slab;
 font-style: normal;
@@ -372,7 +406,7 @@ font-weight: 500;
 font-size: 18px;
 line-height: 153.77%;
 text-align: justify;
-width: 500px;
+width: 96%;
 /* or 28px */
 
 color: #8E8D8D;
@@ -389,6 +423,284 @@ color: #8E8D8D;
 	border: none;
 	margin-top: 40px;
 }
+
+
+.client-talk {
+	padding-left: 10%;
+	padding-top: 20px;
+}
+
+.client-talk .heading {
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 66px;
+
+	color: #1D2047;
+}
+
+.client-talk .box-in {
+	width: 378px;
+	height: 322px;
+	left: 941px;
+	top: 4523px;
+	margin-top: 50px;
+	background: #FFFFFF;
+	border-radius: 4px;
+	padding: 15px 25px;
+}
+
+.client-talk .box-in:hover {
+	
+	box-shadow: 0px 16px 100px rgba(131, 131, 131, 0.25);
+}
+
+.client-talk .box-in .comment {
+	font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 146%;
+/* or 26px */
+letter-spacing: 0.02em;
+
+color: #838383;
+width: 80%;
+}
+
+.client-talk .box-in .footer {
+	position: absolute;
+	bottom: 0px;
+	min-height: 70px;
+	width: 100%;
+}
+
+.client-talk .box-in .footer img { 
+	border-radius: 100%;
+	width: 50px;
+	height: 50px;
+}
+
+.client-talk .box-in .footer .off {
+	font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+/* or 26px */
+
+color: #838383;
+}
+
+.client-talk .box-in .footer .aff {
+	font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+color: #1D2047;
+}
+
+
+.b-4-footer {
+	width: 100%;
+min-height: 194px;
+padding: 50px 8%;
+background: #FBFBFB;
+mix-blend-mode: normal;
+}
+
+.b-4-footer .contact {
+	font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+letter-spacing: 0.25em;
+text-transform: uppercase;
+
+color: #FFB800;
+}
+
+.b-4-footer .contact-white {
+	font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+letter-spacing: 0.25em;
+text-transform: uppercase;
+
+color: transparent;
+}
+
+.b-4-footer .tally {
+	margin-top: 25px;
+}
+
+.b-4-footer .tally img {
+	margin-right: 20px;
+}
+
+.b-4-footer .tally span {
+	font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+font-size: 26px;
+line-height: 47px;
+
+color: #1D2047;
+}
+
+.customer {
+	padding-top: 0px;
+	margin-top: 180px;
+	height: 500px;
+	/*background: grey;*/
+}
+
+.customer .dots {
+	width: 350px;
+	height: 500px;
+	position: relative;
+	left: -100px;
+	z-index: 0;
+}
+
+.customer .girl {
+	position: relative;
+	width: 650px;
+	height: 650px;
+	margin-top: -154px;
+	z-index: 5;
+}
+
+.customer .card {
+	position: relative;
+	margin-left: -360px;
+	z-index: 6;
+}
+
+
+.customer .topic {
+	font-family: Manrope;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+letter-spacing: 0.19em;
+
+color: #F6B421;
+
+}
+
+.customer .heed {
+	font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 66px;
+
+color: #1D2047;
+}
+
+.customer .cont {
+	font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 153.77%;
+text-align: justify;
+width: 96%;
+/* or 28px */
+
+color: #8E8D8D;
+}
+
+.customer button {
+	width: 367px;
+	height: 54px;
+	color: #fff;
+	font-size: 15px;
+	background: linear-gradient(90deg, #0EB3E4 2.49%, #0E9CD2 100%);
+	box-shadow: 0px 20px 40px rgba(13, 57, 120, 0.21);
+	border-radius: 2px;
+	border: none;
+	margin-top: 40px;
+}
+
+
+section.footer {
+	min-height: 369px;
+	background: linear-gradient(180deg, #0BB1E3 -33.33%, #0F2976 100%);
+	padding: 70px 0px 0px 0px;
+}
+
+.footer .stage-1 {
+	margin: 0px 120px;
+	padding-bottom: 40px;
+}
+
+.footer .heading {
+width: 221px;
+height: 48px;
+font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+
+color: #FFFFFF;
+
+}
+
+.footer ul {
+	list-style-type: none;
+	text-align: left;
+	padding-left: 0;
+	margin-top: 20px;
+
+}
+
+.footer ul li {
+	font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 26px;
+
+color: #DADADA;
+}
+.footer ul li a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.footer ul li a:hover {
+	color: #fff;
+}
+
+.footer .after-footer {
+	height: 90px;
+	border: none;
+	border-top: 2px solid rgba(255, 255, 255, 0.22);
+	padding: 23px 255px auto 122px;
+}
+
+.footer .after-footer div img {
+	margin-top: 35px;
+	margin-left: 20%;
+}
+.footer .after-footer .dossr {
+	font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 14px;
+/* identical to box height */
+margin-top: 43px;
+/*margin-left: 20px;*/
+color: #DADADA;
+}
+
 
 
 
